@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+
+
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    font-family:var(--newsreader);
+}
+
+:root{
+    --lightgreen:#E8F2ED;
+    --green:#1AE570;
+    --darkgreen:#4F966E;
+    --white:#fff;
+    --black:#000;
+    --red:#964F4F;
+    --newsreader: 'Newsreader', serif;
+}
+
+header{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+main{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+footer{
+    max-width: 960px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+.button-green{
+    background: var(--green);
+    color: var(--black);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button-green:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px var(--lightgreen);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+header div form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--lightgreen);
+    background-color: var(--lightgreen);
+    padding: 8px 20px;
+    border-radius: 100px;
+}
+
+header div form i{
+    color: var(--darkgreen);
+    font-size: 18px;
+}
+
+header div form button{
+    border: none;
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+header div form input{
+    border: none;
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+::placeholder{
+    color: var(--darkgreen);
+}
+
+header div a:nth-child(2){
+    background: var(--lightgreen);
+    color: var(--black);
+    padding: 12px 20px;
+    border-radius: 100px;
+}
+
+header div a:nth-child(2):hover{
+    background: var(--black);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+#burger{
+    display: none;
+    color: var(--darkgreen);
+}
+
+/* MAIN */
+/* SECTION 1 */
+
+#section1{
+    background-image: url('/img/img1.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 460px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#section1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130%;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+#section1 h1{
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#section1 p{
+    color: var(--white);
+    line-height: 24px;
+}
+
+#section1 a{
+    display: flex;
+    align-self: flex-start;
+}
+
+/* SECTION 2 */
+
+#section2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+#section2 article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#section2 article div div{
+    display: flex;
+    gap: 10px;
+}
+
+#section2 > article > div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+}
+
+#section2 a{
+    display: flex;
+    align-self: flex-end;
+}
+
+#section2 article img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#section2 h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#section2 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 75%;
+}
+
+/* Footer */
+
+footer ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+footer a{
+    color: var(--darkgreen);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+footer a:hover{
+    color: var(--black);
+    transition: all 0.3s;
+}
+
+footer p{
+    color: var(--darkgreen);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    padding: 15px;
+    padding-bottom: 15px;
+}
+
+/* Responsive tablette */
+
+@media screen and (max-width: 1023px){
+
+/* section2 */ 
+
+#section2 p{
+    width: 100%;
+}
+
+#section2 article div div {
+    flex-direction: column;
+}
+
+#section2 a {
+    align-self: flex-start;
+}
+}
+
+/* Responsive mobile */
+
+@media screen and (max-width: 767px){
+
+/* header */
+
+header div{
+    display: none;
+}
+
+#burger{
+    display: block;
+    font-size: 18px;
+}
+
+/* section1 */
+
+#section1 div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+#section1 h2 {
+    font-size: 28px;
+}
+
+#section1 a{
+    align-self: center;
+}
+
+/* section2 */
+
+#section2 article{
+    grid-template-columns: 1fr;
+}
+
+#section2 a {
+    align-self: center;
+}
+
+/* footer */
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+}
+
+/* PAGE METAVERSE.HTML */
+
+/* section1 */
+
+#metaverse-section1{
+    padding-bottom: 60px;
+}
+
+#metaverse-section1 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#metaverse-section1 h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#metaverse-section1 div:nth-child(2){
+    padding: 40px;
+}
+
+#metaverse-section1 div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px;
+}
+
+#metaverse-section1 h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Responsive mobile */
+
+@media screen and (max-width: 767px){
+
+/* metaverse-section1 */
+
+#metaverse-section1 div:nth-child(2){
+    padding: 40px 0px;
+}
+
+#metaverse-section1 h2{
+    line-height: 32px;
+}
+}
