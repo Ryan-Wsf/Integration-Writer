@@ -16,6 +16,7 @@
     --black:#000;
     --red:#964F4F;
     --newsreader: 'Newsreader', serif;
+    --grey:#E5E8EB;
 }
 
 header{
@@ -342,3 +343,14 @@ header a:nth-child(2){
     color: var(--red);
     font-weight: 700;
 }
+
+/* Responsive tablette */
+
+@media screen and (max-width: 1024px){
+
+
+#filter-articles {
+    flex-wrap: wrap;
+}
+}
+

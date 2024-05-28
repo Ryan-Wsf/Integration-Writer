@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+
+
+*{
+    margin:0;
+    scroll-behavior: smooth;
+    font-family:var(--newsreader);
+}
+
+:root{
+    --lightgreen:#E8F2ED;
+    --green:#1AE570;
+    --darkgreen:#4F966E;
+    --white:#fff;
+    --black:#000;
+    --red:#964F4F;
+    --newsreader: 'Newsreader', serif;
+    --grey:#E5E8EB;
+}
+
+header{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 15px;
+    border-bottom: 1px solid var(--lightgreen);
+}
+
+main{
+    max-width: 520px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+footer{
+    max-width: 960px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+li{
+    list-style: none;
+}
+
+.button-green{
+    background-color: var(--green);
+    color: var(--black);
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.button-green:hover{
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.button-grey{
+    background-color: var(--grey);
+    color: var(--black);
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.button-grey:hover{
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.button-lightgreen{
+    background: var(--lightgreen);
+    color: var(--black);
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#burger{
+    display: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/* Main */
+/* Section */
+
+section{
+    margin: 80px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+::placeholder{
+    color: var(--darkgreen);
+}
+
+form div{
+    display: flex;
+    gap: 10px;
+}
+
+#keep{
+    accent-color: var(--darkgreen)
+}
+
+/* Masquer la checkbox par défaut */
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--darkgreen); /* Couleur de la bordure de la checkbox */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Style pour la coche */
+.custom-checkbox:checked::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 1.5px;
+    width: 6px;
+    height: 6px;
+    border: solid var(--black); /* Couleur de la coche */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Footer */
+
+footer div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer div a{
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: 400;
+}
+footer ul li a{
+    color: var(--darkgreen);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+footer ul li a:hover{
+    color: var(--black);
+    transition: all 0.3s;
+}
+
+footer p{
+    color: var(--darkgreen);
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
